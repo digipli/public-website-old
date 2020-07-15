@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>left-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Insights-Detail-Page" transform="translate(-255.000000, -1613.000000)" fill="#969696" fill-rule="nonzero">
+            <g id="Group-20" transform="translate(255.000000, 1609.000000)">
+                <g id="Group-19">
+                    <g id="left-arrow" transform="translate(0.000000, 4.000000)">
+                        <path d="M8.19854545,0.733818182 C8.52145455,0.410909091 9.02981818,0.410909091 9.35272727,0.733818182 C9.66472727,1.04581818 9.66472727,1.56509091 9.35272727,1.87636364 L3.50036364,7.72872727 L22.8123636,7.72872727 C23.2625455,7.72872727 23.632,8.08654545 23.632,8.53672727 C23.632,8.98690909 23.2625455,9.35636364 22.8123636,9.35636364 L3.50036364,9.35636364 L9.35272727,15.1978182 C9.66472727,15.5207273 9.66472727,16.0407273 9.35272727,16.352 C9.02981818,16.6749091 8.52145455,16.6749091 8.19854545,16.352 L0.960727273,9.11418182 C0.648727273,8.80218182 0.648727273,8.28290909 0.960727273,7.97163636 L8.19854545,0.733818182 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

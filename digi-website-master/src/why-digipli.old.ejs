@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="DigiPli">
+    <meta property="og:description" content="DigiPli | Compliance & AML Solutions for the Digital Age">
+    <meta property="og:url" content="https://www.digipli.com">
+      <meta property="og:image" content="http://ec2-13-57-247-215.us-west-1.compute.amazonaws.comimages/Banner-image-01.png" />
+
+    <link rel="icon" href="images/favicon.ico">
+
+
+    <title>DigiPli</title>
+    <% include /src/include/styles.ejs %>
+
+</head>
+
+<body>
+
+    <% include /src/include/header.ejs %>
+
+
+        <main>
+            <section class="dg-all-pages-banner">
+                <div class="container-fluid">
+                    <div class="dg-all-pages-banner-title">
+                        <h1 class="dg-pages-main-title">Why DigiPli</h1>
+                    </div>
+                </div>
+                <div class="dg-text-block"></div>
+                <div class="dg-background-right-side"></div>
+            </section>
+            <section class="dg-solutions-details-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="dg-solutions-details" data-aos="fade-up" data-aos-duration="1500">
+                                <h4 class="dg-inner-pages-small-title">Why We’re Different</h4>
+                                <p class="dg-paragraph-text">Financial institutions have a myriad of choices when selecting a consulting firm. However, DigiPli was founded by former Compliance and AML professionals who understand the issues and challenges facing financial institutions operating in this complex and ever-changing environment. And that’s our sole focus. With DigiPli, you’ll get:</p>
+                            </div>
+                        </div>
+                        <div class="offset-1 col-11">
+                            <div class="dg-solutions-details-list" data-aos="fade-up" data-aos-duration="1500">
+                                <h5 class="dg-paragraph-text">Advice and ongoing support from Compliances and AML specialists with decades of industry experience.</h5>
+                                <h5 class="dg-paragraph-text">Access to our relationships with RPA ‘bot installers and AI Overlay providers, whose technologies can help optimize your processes, systems and controls.</h5>
+                                <h5 class="dg-paragraph-text">Insights and assistance in selecting and deploying the Compliance and AML SaaS applications, data providers and related solutions that deliver the best results for the best value.</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="dg-solutions-details dg-who-we-can-help-sections" data-aos="fade-up" data-aos-duration="1500">
+                                <h4 class="dg-inner-pages-small-title">Who We Can Help</h4>
+                                <p class="dg-paragraph-text">Our Solutions are geared towards helping smaller to mid-size financial institutions take advantage of new technologies and approaches to solve traditional Compliance and AML challenges. This includes:</p>
+                            </div>
+                        </div>
+                        <div class="offset-1 col-11">
+                            <div class="dg-solutions-details-list" data-aos="fade-up" data-aos-duration="1500">
+                                <h5 class="dg-paragraph-text">Brokerage & Trading Firms</h5>
+                                <h5 class="dg-paragraph-text">Commercial & Savings Banks</h5>
+                                <h5 class="dg-paragraph-text">Money Service Businesses</h5>
+                                <h5 class="dg-paragraph-text">FinTechs</h5>
+                                <h5 class="dg-paragraph-text">Investment Banks</h5>
+                                <h5 class="dg-paragraph-text">Investment Funds & Advisors</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <% include /src/include/footer.ejs %>
+
+        <% include /src/include/scripts.ejs %>
+        <script>
+            $('button.hello').click(function (e) {
+                swal("Hello world!");
+            });
+
+            $('button.delete-account').click(function (e) {
+                swal("Good job!", "You clicked the button!", "success");
+            });
+
+            $('button.promises').click(function (e) {
+                swal("Click on either the button or outside the modal.")
+                    .then((value) => {
+                        swal(`The returned value is: ${value}`);
+                    });
+            });
+
+            $('button.sure').click(function (e) {
+                swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            swal("Poof! Your imaginary file has been deleted!", {
+                                icon: "success",
+                            });
+                        } else {
+                            swal("Your imaginary file is safe!");
+                        }
+                    });
+            });
+
+        </script>
+    </body>
+
+</html>

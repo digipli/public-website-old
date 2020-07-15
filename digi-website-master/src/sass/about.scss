@@ -1,0 +1,346 @@
+
+    .dg-about-page-main{
+        padding: 100px 0;
+        @include media-breakpoint-down(md){
+            padding: 75px 0;
+        }
+        @include media-breakpoint-down(sm){
+            padding: 58px 0;
+        }
+        .dg-about-page-title{
+            text-align: center;
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 40px;
+            }
+            @include media-breakpoint-down(sm){
+                text-align: start;
+                margin-bottom: 25px;
+            }
+            .dg-subtitle{
+               font-weight: 400;
+            }
+            .dg-small-label{
+                margin-bottom: 10px;
+            }
+        }
+        .dg-the-company-details{
+            text-align: center;
+            // border: 3px dashed $border-color;
+            padding: 35px 30px 52px;
+            width: 100%;
+            .dg-paragraph-text{
+                margin-bottom: 28px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+            &.border-animations{
+                width: 100%;
+                height: 100%;
+                // background-image: linear-gradient(90deg, rgba(24,0,185,0.10) 50%, transparent 50%), linear-gradient(90deg, rgba(24,0,185,0.10) 50%, transparent 50%), linear-gradient(0deg, rgba(24,0,185,0.10) 50%, transparent 50%), linear-gradient(0deg, rgba(24,0,185,0.10) 50%, transparent 50%);
+                // background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+                // background-size: 15px 3px, 15px 3px, 3px 15px, 3px 15px;
+                // background-position: left top, right bottom, left bottom, right   top;
+                // animation: border-dance 0.3s infinite linear;
+                    border: 3px solid rgba(24, 0, 185, 0.1);
+            }
+            @keyframes border-dance {
+                0% {
+                    background-position: left top, right bottom, left bottom, right   top;
+                }
+                100% {
+                    background-position: left 15px top, right 15px bottom , left bottom 15px , right   top 15px;
+                }
+            }
+        }
+
+        .dg-leadership-team-block{
+            .row{
+                .col-md-6{
+                    margin-bottom: 15px;
+                }
+            }
+            .dg-leadership-title{
+                padding: 80px 0;
+                text-align: center;
+                @include media-breakpoint-down(md){
+                    padding: 80px 0 40px;
+                }
+                @include media-breakpoint-down(sm){
+                    padding: 60px 0 26px;
+                    text-align: start;
+                }
+            }
+            .dg-leadership-details{
+                border: 3px solid $border-color;
+                padding: 40px 30px 35px;
+                width: 100%;
+                text-align: center;
+                display: inline-block;
+                height: 100%;
+                @include media-breakpoint-down(md){
+                    padding: 30px 15px;
+                }
+                .dg-leader-images{
+                    max-width: 294px;
+                    max-height: 294px;
+                    overflow: hidden;
+                    border-radius: 100%;
+                    margin: auto;
+                    @include media-breakpoint-down(lg){
+                        max-width: 210px;
+                        max-height: 210px;
+                    }
+                    @include media-breakpoint-down(md){
+                        max-width: 180px;
+                        max-height: 180px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        max-width: 160px;
+                        max-height: 160px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+                .dg-leader-details{
+                    padding-top: 40px;
+                    @include media-breakpoint-down(md){
+                        padding-top: 20px;
+                    }
+                    span{
+                        font-weight: 400;
+                        font-size: 28px;
+                        color: $full-gray;
+                        @include media-breakpoint-down(md){
+                            font-size: 22px;
+                        }
+                        @include media-breakpoint-down(sm){
+                            font-size: 18px;
+                        }
+                    }
+                    .dg-paragraph-text{
+                        padding: 18px 0 36px;
+                        @include media-breakpoint-down(md){
+                            padding: 10px 0 15px;
+                        }
+                    }
+                    .dg-small-title{
+                        &.dg-linkedin-link{
+                            color: $primary;
+                            text-decoration: underline !important;
+                            margin-top: 18px;
+                            transition: all 0.3s ease-in-out;
+                            @include media-breakpoint-down(md){
+                                margin-top: 8px;
+                            }
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dg-strategic-partners{
+        padding: 90px 0 80px;
+        background: #FAFAFA;
+        @include media-breakpoint-down(sm){
+            padding: 56px 0 0px;
+        }
+        .dg-partners-logo{
+            text-align: center;
+        }
+        .dg-partners-images{
+            padding-top: 59px;
+            @include media-breakpoint-down(md){
+                padding-top: 49px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-top: 30px;
+            }
+            .row{
+                display: flex;
+                align-items: center;
+            }
+            .dg-partners-block{
+                background: $white;
+                border: 3px solid $border-color;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 0 15px;
+                @include media-breakpoint-down(md){
+                    margin-bottom: 30px;
+                }
+                .dg-img{
+                    display: flex;
+                    align-items: center;
+                    height: 150px;
+                    max-width: 130px;
+                    max-height: 150px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .dg-clients-block{
+        padding: 90px 0 10px;
+        @include media-breakpoint-down(sm){
+            padding: 60px 0 10px;
+        }
+        .dg-partners-logo{
+            text-align: center;
+        }
+        .dg-partners-images{
+            padding-top: 59px;
+            @include media-breakpoint-down(md){
+                padding-top: 49px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-top: 32px;
+            }
+            .row{
+                display: flex;
+                align-items: center;
+            }
+            .dg-partners-block{
+                background: $white;
+                border: 3px solid $border-color;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 0 15px;
+                @include media-breakpoint-down(md){
+                    margin-bottom: 30px;
+                }
+                .dg-img{
+                    display: flex;
+                    align-items: center;
+                    height: 150px;
+                    max-width: 130px;
+                    max-height: 150px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .dg-careers-block{
+            padding: 70px 0 15px;
+            @include media-breakpoint-down(sm){
+                padding: 30px 0 15px;
+            }
+            .dg-small-title{
+                text-align: center;
+                margin-bottom: 35px;
+                @include media-breakpoint-down(sm){
+                    text-align: start;
+                }
+            }
+            h4{
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 25px;
+                color: $full-gray;
+                margin: 30px 0 80px;
+                @include media-breakpoint-down(sm){
+                    font-size: 18px;
+                    margin: 17px 0 38px;
+                }
+            }
+        }
+        .dg-careers-sections{
+            .dg-careers-details-block-main{
+                border: 1px solid transparent;
+                padding: 30px;
+                transition: all 0.3s ease-in-out;
+                margin-bottom: 30px;
+                @include media-breakpoint-down(sm){
+                    padding: 15px;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                .dg-details-list-main{
+                    margin-left: 60px;
+                    @include media-breakpoint-down(sm){
+                        margin-left: 30px;
+                    }
+                    .dg-details-block{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 40px;
+                        @include media-breakpoint-down(sm){
+                            margin-bottom: 25px;
+                        }
+                        .dg-inner-pages-small-title{
+                            color: $full-gray;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                border: 8px solid #EAEAEA;
+                                border-radius: 4px;
+                                width: 45px;
+                                height: 45px;
+                                left: -65px;
+                                @include media-breakpoint-down(sm){
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 4px solid #EAEAEA;
+                                    left: -30px;
+                                }
+                            }
+                        }
+                    }
+                    .dg-paragraph-text{
+                        margin-bottom: 15px;
+                    }
+                }
+                &:hover{
+                    border-color: #EAEAEA;
+                }
+            }
+        }
+    }
+    #exampleModalCenter{
+        .modal-content{
+            .modal-body{
+                .dg-btn-footer{
+                    display: flex;
+                    justify-content: space-between;
+                    .dg-uplod-file{
+                        position: relative;
+                        width: 160px;
+                        display: inline-block;
+                        cursor: pointer;
+                        input{
+                            left: 0;
+                            position: absolute;
+                            width: 100%;
+                            opacity: 0;
+                            height: 100%;
+                        }
+                        .btn{
+                            background: #fff;
+                            border: 2px solid  $border-color;
+                            color: $light-gray;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+        }
+    }

@@ -1,0 +1,67 @@
+<footer class="dg-footer" id="dg-footer-section">
+    <div class="container dg-space <%= (htmlWebpackPlugin.options.filename === 'Insights-detail.html' || htmlWebpackPlugin.options.filename === 'contact-us.html') ? 'd-none' : '' %>" id="section2">
+        <div class="dg-form-title-block" data-aos="fade-up" data-aos-duration="1500">
+            <!-- <p class="dg-small-label">Contact Us</p> -->
+            <h4 class="dg-subtitle">Contact us at <a target="blank" href="mailto:team@digipli.com">team@digipli.com</a> or by using the form below</h4>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-10 col-xl-9">
+               <form action="" class="dg-form row" id="contactUsForm">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="name"  placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="email" class="form-control" name="email"  placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="business"  placeholder="Business">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" name="message" placeholder="Message"rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-md-12 text-center mb-0" >
+                        <button type="submit" class="w-sm-100 btn btn-success al-btn" id="contactUsFormSubmit">Submit
+                            <span class="d-none spinner-border spinner-border-sm pb-1 ml-3" role="status" aria-hidden="true"></span>
+                        </button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="dg-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>© Copyright 2019 DigiPli</p>
+                </div>
+                <div class="col-md-8">
+                    <ul class="dg-menu d-flex align-items-center justify-content-end">
+                        <li class="<%= htmlWebpackPlugin.options.filename === 'why-digipli.html' ? 'active' : '' %>" >
+                        <a href="why-digipli.html" id="DigiPli">Why DigiPli
+                            <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="<%= htmlWebpackPlugin.options.filename === 'solutions.html' ? 'active' : '' %>" >
+                            <a href="solutions.html" id="Solutions">Solutions</a>
+                        </li>
+                        <li class="<%= htmlWebpackPlugin.options.filename === 'insights.html' ? 'active' : '' %>" >
+                            <a  href="insights.html" id="Insights">Insights</a>
+                        </li>
+                        <li class="<%= htmlWebpackPlugin.options.filename === 'about.html' ? 'active' : '' %>" >
+                            <a href="about.html" id="About" >About</a>
+                        </li>
+                        <li class="mr-0 <%= htmlWebpackPlugin.options.filename === 'contact-us.html' ? 'active' : '' %>">
+                            <a href="contact-us.html">Contact us</a>
+                        </li>
+                        <li class="m-0">
+                            <a href="https://www.linkedin.com/company/digipli-inc/"><i></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dg-footer-fix-img-bottom"></div>
+    <div class="dg-footer-fix-img-left <%= (htmlWebpackPlugin.options.filename === 'Insights-detail.html' || htmlWebpackPlugin.options.filename === 'contact-us.html') ? 'd-none' : '' %>" ></div>
+</footer>
