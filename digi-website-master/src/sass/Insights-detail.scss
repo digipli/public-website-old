@@ -1,0 +1,203 @@
+.dg-insights-details-page{
+    padding: 100px 0;
+    @include media-breakpoint-down(sm){
+        padding: 54px 0 70px;
+    }
+    .dg-subtitle{
+        color: $primary;
+        text-transform: uppercase;
+    }
+    .dg-share-title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: normal;
+        color: $full-gray;
+        margin: 12px 0 15px;
+        display: block;
+        @include media-breakpoint-down(md){
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 14px;
+        }
+    }
+   
+    .dg-social-icons-list{
+        display: flex;
+        align-items: center;
+        h4{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: normal;
+            color: $light-gray;
+            margin-right: 30px;
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+        li{
+            margin-right: 20px;
+            a{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: $light-gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease-in-out;
+                img{
+                    width: 16px;
+                }
+                &:hover{
+                    background: $primary;
+                }
+            }
+        }
+    }
+    .dg-join-us-details-block{
+        padding-top: 40px;
+        .dg-paragraph-text{
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: 400;
+            color: $light-gray;
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+            @include media-breakpoint-down(sm){
+                margin-bottom: 16px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+        .dg-details-bold{
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}
+.dg-slider-block-main{
+    position: relative;
+    padding: 20px 0 120px;
+    @include media-breakpoint-down(md){
+        padding: 20px 0 90px;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper{
+            .swiper-slide{
+                height: 400px;
+                display: flex;
+                .dg-insights-detail-slide{
+                    border: 3px solid $border-color;
+                    padding: 48px 45px 52px;
+                    height: 100%;
+                    position: relative;
+                    background: $white;
+                    @include media-breakpoint-down(md){
+                        padding: 30px 30px 15px;
+                    }
+                    h5{
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 34px;
+                        color: $full-gray;
+                        @include media-breakpoint-down(md){
+                            font-size: 22px;
+                        }
+                        @include media-breakpoint-down(sm){
+                            font-size: 18px;
+                        }
+                    }
+                    .dg-date-list{
+                        font-weight: 400;
+                        color: $light-gray;
+                        font-size: 16px;
+                        line-height: 16px;
+                        padding: 15px 0;
+                        display: inline-block;
+                        @include media-breakpoint-down(md){
+                            font-size: 14px;
+                        }
+                    }
+                    .dg-paragraph-text{
+                        margin-bottom: 30px;
+                        @include media-breakpoint-down(md){
+                            overflow: hidden;
+                            height: 145px;
+                        }
+                        @include media-breakpoint-down(sm){
+                            height: auto;
+                        }
+                    }
+                    .dg-slider-read-more-btn{
+                        position: absolute;
+                        bottom: 40px;
+                        @include media-breakpoint-down(lg){
+                            bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dg-next-and-prev-btn-block{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .swiper-button-next, 
+        .swiper-button-prev{
+            background-image: none;
+            outline: none;
+            box-shadow: none;
+            font-weight: 400;
+            font-size: 20px;
+            color: $light-gray;
+            width: auto;
+            height: auto;
+            top: -50px;
+            left: 0;
+            padding-left: 40px;
+            right: auto;
+            position: relative;
+            @include media-breakpoint-down(md){
+                font-size: 15px;
+                padding-left: 27px;
+                top: -25px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                background: url(../images/swiper-arrow.svg)no-repeat;
+                background-size: cover;
+                width: 24px;
+                height: 17px;
+                top: 0;
+                left: 0px;
+                @include media-breakpoint-down(md){
+                    width: 19px;
+                    height: 14px;
+                }
+            }
+        }
+       .swiper-button-next{
+        left: auto;
+        right: 0;
+        padding-right: 40px;
+        padding-left: 0;
+        &::before{
+            left: auto;
+            right: 0;
+            transform: rotate(180deg);
+        }
+       }
+    }
+}

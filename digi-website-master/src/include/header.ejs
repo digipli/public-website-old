@@ -1,0 +1,66 @@
+
+    <header class="dg-header <%= htmlWebpackPlugin.options.filename === 'index.html' ? 'dg-header-home' : '' %>">
+        <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand" href="index.html">
+                <img class="lms-header-logo" src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav ml-auto dg-menu">
+                    <li class="nav-item dropdown <%= htmlWebpackPlugin.options.filename === 'why-digipli.html' ? 'active' : '' %>" >
+                    <!-- <a class="nav-link dropdown-toggle" href="why-digipli.html" id="DigiPli"
+                    aria-expanded="false">Why DigiPli
+                        <span class="sr-only">(current)</span>
+                        </a> -->
+
+                        <a class="nav-link " href="why-digipli.html" id="DigiPli"
+                        aria-expanded="false">Why DigiPli
+                            <span class="sr-only">(current)</span>
+                            </a>
+                        <!-- <div class="dropdown-menu" aria-labelledby="DigiPli">
+                            <a href="why-digipli.html" class="dropdown-item" href="javascript:void(0);">Mission</a>
+                            <a href="why-digipli.html#customers" class="dropdown-item" href="javascript:void(0);">Customers</a>
+                        </div> -->
+                    </li>
+
+                    <li class="nav-item dropdown <%= htmlWebpackPlugin.options.filename === 'solutions.html' ? 'active' : '' %>">
+                        <!-- <a class="nav-link dropdown-toggle" href="solutions.html" id="Solutions"
+                        aria-expanded="false">Solutions</a> -->
+                        <a class="nav-link" href="solutions.html" id="Solutions"
+                        aria-expanded="false">Solutions</a>
+                        <!-- <div class="dropdown-menu" aria-labelledby="solutions">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                    </li>
+                    <li class="nav-item dropdown <%= htmlWebpackPlugin.options.filename === 'insights.html' ? 'active' : '' %>">
+                        <a class="nav-link dropdown-toggle" href="insights.html" id="Insights"
+                        aria-expanded="false">Insights</a>
+                        <div class="dropdown-menu" aria-labelledby="Insights">
+                            <a href="insights.html#blogs" class="dropdown-item" href="Insights-detail.html">Blogs</a>
+                            <a href="insights.html#whitepapers"class="dropdown-item" href="javascript:void(0);">White Papers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown <%= htmlWebpackPlugin.options.filename === 'about.html' ? 'active' : '' %>">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="About"
+                            aria-expanded="false">About</a>
+                        <div class="dropdown-menu" aria-labelledby="About">
+                            <a href="about.html#company"class="dropdown-item" href="javascript:void(0);">The Company</a>
+                            <a href="about.html#leadership" class="dropdown-item" href="javascript:void(0);">Leadership</a>
+                            <a href="about.html#careers" class="dropdown-item" href="javascript:void(0);">Careers</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item mr-0 <%= htmlWebpackPlugin.options.filename === 'contact-us.html' ? 'active' : '' %>">
+                        <!-- <a class="nav-link" href="contact-us.html">Contact us</a> -->
+                          <a class="nav-link" href="#dg-footer-section">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>

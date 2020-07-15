@@ -1,0 +1,24 @@
+.dg-contact-su-sections{
+    padding: 80px 0 200px;
+    @include media-breakpoint-down(sm){
+        padding: 55px 0 150px;
+    }
+    .dg-address-block{
+        text-align: center;
+        p{
+            font-size: 24px;
+            color: $light-gray;
+            font-weight: 400;
+            line-height: 34px;
+            margin-bottom: 34px;
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            .dg-bold-title{
+                font-weight: 600;
+                color: $full-gray;
+            }
+        }
+    }
+}
